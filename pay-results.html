@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Pay Results</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" /> 
+
+		<!-- CSS
+	============================================ -->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<!-- Icon Font CSS -->
+		<link rel="stylesheet" href="static/css/line-awesome.css">
+		<link rel="stylesheet" href="static/css/themify.css">
+
+		<!-- othres CSS -->
+		<link rel="stylesheet" href="static/css/animate.css">
+		<link rel="stylesheet" href="static/css/owl-carousel.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/css/jquery-ui.css">
+		<link rel="stylesheet" href="static/css/slick.css">
+
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/common.css">
+		<link type="text/css" rel="stylesheet" href="static/css/jquery.toast.css">
+		<style>
+			.main-container-c {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 60px 0;
+			}
+
+			.pay-no {
+				font-size: 100px;
+				color: #bf3938;
+				padding-bottom: 10px;
+			}
+
+			.pay-yes {
+				font-size: 100px;
+				color: green;
+				padding-bottom: 10px;
+			}
+
+			.pay-flex {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.orderNo {
+				font-size: 20px;
+			}
+
+			.tip {
+				font-size: 36px;
+				text-align: center;
+			}
+
+			.order-list {
+				margin-top: 60px;
+			}
+
+			.order-list>a {
+				color: #066;
+				font-size: 30px;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.no-order{
+				font-size: 26px;
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main-wrapper wrapper-2">
+			<header class="header-area sticky-bar">
+				<div class="main-header-wrap">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-2">
+								<div>
+									<a href="index">
+										<img src="static/image/logo.png" class="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-xl-8 col-lg-8">
+								<div class="main-menu">
+									<nav>
+										<ul>
+											<li class="angle-shape"><a href="index">Home </a>
+											</li>
+											<li class="angle-shape"><a href="shop-list"> Shop </a>
+										<ul class="mega-menu">
+										</ul>
+									</li>
+									<li><a href="blog"> Blog </a></li>
+									<li><a href="contact"> Contact </a></li>
+											<li class="angle-shape  angle-shape-pages"><a>Pages</a>
+												<ul class="submenu">
+													<li><a href="edit-account?id=1">Orders</a></li>
+													<li><a href="edit-account?id=2">Addresses</a></li>
+													<li><a href="edit-account?id=3">Account details </a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="col-xl-2 col-lg-2">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style  cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style header-search ml-15">
+										<a class="search-active" href="#"><i class="la la-search"></i></a>
+									</div>
+									<div class="same-style setting-wrap ml-15">
+										<a class="setting-active" href="#"><i class="la la-cog"></i></a>
+										<div class="setting-content">
+											<ul>
+												<li>
+													<h4>Currency</h4>
+													<ul>
+														<li><a href="#">USD</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Language</h4>
+													<ul>
+														<li><a href="#">English (US)</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Account</h4>
+													<ul>
+														<li class="AccountEditAccount"><a
+																href="./edit-account?id=3">Account Details</a></li>
+														<li class="AccountLogin"><a href="./login">Login</a>
+														</li>
+														<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-small-mobile">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-6">
+								<div class="mobile-logo">
+									<a href="index">
+										<img alt="" src="static/image/logo.png" class="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style mobile-off-canvas">
+										<a class="mobile-aside-button" href="#"><i class="la la-navicon"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-off-canvas-active">
+				<a class="mobile-aside-close"><i class="la la-close"></i></a>
+				<div class="header-mobile-aside-wrap">
+					<div class="mobile-search">
+						<form class="search-form" action="#">
+							<input type="text" placeholder="Search entire store…" id="livesearch1" onblur="fnSearch(1)">
+							<button class="button-search"><i class="la la-search"></i></button>
+						</form>
+					</div>
+					<div class="mobile-menu-wrap">
+						<!-- mobile menu start -->
+						<div class="mobile-navigation">
+							<!-- mobile menu navigation start -->
+							<nav>
+								<ul class="mobile-menu">
+									<li class="menu-item-has-children"><a href="index">Home</a>
+									</li>
+									<li class="menu-item-has-children "><a href="shop-list">shop</a>
+										<ul class="dropdown  mega-menu">
+
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">pages</a>
+										<ul class="dropdown">
+											<li><a href="edit-account?id=1">Orders</a></li>
+											<li><a href="edit-account?id=2">Addresses</a></li>
+											<li><a href="edit-account?id=3">Account details </a></li>
+										</ul>
+									</li>
+									<li><a href="contact">contact</a></li>
+								</ul>
+							</nav>
+							<!-- mobile menu navigation end -->
+						</div>
+						<!-- mobile menu end -->
+					</div>
+					<div class="mobile-curr-lang-wrap">
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-language-active" href="#">Language <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown lang-dropdown-active">
+								<ul>
+									<li><a href="#">English (US)</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-currency-active" href="#">Currency <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown curr-dropdown-active">
+								<ul>
+									<li><a href="#">USD</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-account-active" href="#">Account<i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown account-dropdown-active">
+								<ul>
+									<li class="AccountEditAccount"><a href="./edit-account?id=3">Account
+											Details</a></li>
+									<li class="AccountLogin"><a href="./login">Login</a></li>
+									<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- search start -->
+			<div class="search-content-wrap main-search-active">
+				<a class="search-close"><i class="la la-close"></i></a>
+				<div class="search-content">
+					<p>Start typing and press Enter to search</p>
+					<form class="search-form" action="#">
+						<input type="text" placeholder="Search entire store…" id="livesearch2" onblur="fnSearch(2)">
+						<button class="button-search"><i class="la la-search"></i></button>
+					</form>
+				</div>
+			</div>
+			<!-- mini cart start -->
+			<div class="sidebar-cart-active">
+				<div class="sidebar-cart-all">
+					<a class="cart-close" href="#"><i class="la la-close"></i></a>
+					<div class="cart-content">
+						<h3>Shopping Cart</h3>
+						<ul id="right_product_list">
+
+						</ul>
+						<div class="cart-total">
+							<h4>Subtotal:<span> £ <span class="total-amount-goods">0.00</span></span></h4>
+						</div>
+						<div class="cart-checkout-btn btn-hover default-btn">
+							<a class="btn-size-md btn-bg-black btn-color" id="cart-view">view cart</a>
+							<a class="no-mrg btn-size-md btn-bg-black btn-color" id="checkout-view">checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="breadcrumb-area pt-95 pb-100 bg-img" style="background-image:url(static/image/breadcrumb.jpg);">
+				<div class="container">
+					<div class="breadcrumb-content text-center">
+						<div class="breadcrumb-title">
+							<h2 class="page-title">Payment results</h2>
+						</div>
+						<ul>
+							<li>
+								<a href="index">Home</a>
+							</li>
+							<li class="active">Payment results</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="shop-area pt-95 pb-100">
+				<main class="main-container-c">
+					<span class="pay-flex pay-flex-yes">
+						<i class="las la-check-circle pay-yes"></i>
+						<div class="orderNo">Order number: <span class="order-num"></span></div>
+						<div class="tip">Payment success</div>
+					</span>
+					<span class="pay-flex  pay-flex-no">
+						<i class="las la-exclamation-triangle pay-no"></i>
+						<div class="orderNo">Order number: <span class="order-num"></span></div>
+						<div class="tip">Payment failed</div>
+					</span>
+
+					<div class="order-list">
+						<a href="./edit-account?id=1">View order list</a>
+					</div>
+				</main>
+			</div>
+			<div id="foot">
+
+			</div>
+
+		</div>
+
+		<!-- JS
+============================================ -->
+
+		<!-- Modernizer JS -->
+		<script src="static/js/modernizr-2.8.3.min.js"></script>
+		<!-- jQuery JS -->
+		<script src="static/js/jquery-3.3.1.min.js"></script>
+		<!-- Popper JS -->
+		<script src="static/js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="static/js/bootstrap.min.js"></script>
+
+		<!-- Slick Slider JS -->
+		<script src="static/js/countdown.js"></script>
+		<script src="static/js/counterup.js"></script>
+		<!--<script src="assets/js/plugins/instafeed.js"></script>-->
+		<script src="static/js/jquery-ui.js"></script>
+		<script src="static/js/jquery-ui-touch-punch.js"></script>
+		<script src="static/js/magnific-popup.js"></script>
+		<script src="static/js/owl-carousel.js"></script>
+		<script src="static/js/scrollup.js"></script>
+		<script src="static/js/waypoints.js"></script>
+		<script src="static/js/wow.js"></script>
+		<script src="static/js/slick.js"></script>
+		<script src="static/js/elevatezoom.js"></script>
+		<script src="static/js/sticky-sidebar.js"></script>
+		<script src="static/js/ajax-mail.js"></script>
+		<!-- Main JS -->
+		<script src="static/js/main.js"></script>
+		<script src="static/js/jquery.toast.js"></script>
+
+		<script src="static/ajaxJs/js/head.js" type="module"></script>
+		<script src="static/ajaxJs/js/cart.js" type="module"></script>
+		<script src="static/ajaxJs/js/pay-results.js" type="module"></script>
+
+
+	</body>
+
+</html>
