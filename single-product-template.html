@@ -1,0 +1,1119 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>{product_title} - High Quality Products | Eliza Store</title>
+		<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<meta name="description" content="{product_description} - Shop now with fast shipping and best prices. Free returns available.">
+		<meta name="keywords" content="{product_keywords}, online shopping, ecommerce, best deals, quality products">
+		<meta name="author" content="Eliza Store">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="product">
+		<meta property="og:url" content="{current_url}">
+		<meta property="og:title" content="{product_title} - Eliza Store">
+		<meta property="og:description" content="{product_description}">
+		<meta property="og:image" content="{product_main_image}">
+		<meta property="og:site_name" content="Eliza Store">
+		<meta property="product:price:amount" content="{product_price}">
+		<meta property="product:price:currency" content="USD">
+		<meta property="product:availability" content="in stock">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="{current_url}">
+		<meta property="twitter:title" content="{product_title} - Eliza Store">
+		<meta property="twitter:description" content="{product_description}">
+		<meta property="twitter:image" content="{product_main_image}">
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="{current_url}">
+
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Product",
+			"name": "{product_title}",
+			"description": "{product_description}",
+			"image": [
+				"{product_main_image}",
+				"{product_image_2}",
+				"{product_image_3}"
+			],
+			"brand": {
+				"@type": "Brand",
+				"name": "Eliza Store"
+			},
+			"sku": "{product_sku}",
+			"gtin": "{product_gtin}",
+			"offers": {
+				"@type": "Offer",
+				"url": "{current_url}",
+				"priceCurrency": "USD",
+				"price": "{product_price}",
+				"availability": "https://schema.org/InStock",
+				"seller": {
+					"@type": "Organization",
+					"name": "Eliza Store"
+				}
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "{product_rating}",
+				"reviewCount": "{review_count}"
+			},
+			"review": [
+				{
+					"@type": "Review",
+					"reviewRating": {
+						"@type": "Rating",
+						"ratingValue": "{review_rating}"
+					},
+					"author": {
+						"@type": "Person",
+						"name": "{reviewer_name}"
+					}
+				}
+			]
+		}
+		</script>
+
+		<!-- Breadcrumb Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "{home_url}"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Shop",
+					"item": "{shop_url}"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "{product_title}",
+					"item": "{current_url}"
+				}
+			]
+		}
+		</script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!-- CSS
+	============================================ -->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<!-- Icon Font CSS -->
+		<link rel="stylesheet" href="static/css/line-awesome.css">
+		<link rel="stylesheet" href="static/css/themify.css">
+
+		<!-- othres CSS -->
+		<link rel="stylesheet" href="static/css/animate.css">
+		<link rel="stylesheet" href="static/css/owl-carousel.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/css/jquery-ui.css">
+		<link rel="stylesheet" href="static/css/slick.css">
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/style_originally.css">
+		<link rel="stylesheet" type="text/css" href="static/css/swiper-bundle.min.css" />
+		<link type="text/css" rel="stylesheet" href="static/css/jquery.toast.css">
+
+		<style>
+			.swiper {
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.swiper {
+				width: 100%;
+				height: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.swiper-slide {
+				background-size: cover;
+				background-position: center;
+			}
+
+			.mySwiper2 {
+				height: 80%;
+				width: 100%;
+			}
+
+			.mySwiper {
+				height: 20%;
+				box-sizing: border-box;
+				padding: 10px 0;
+			}
+
+			.mySwiper .swiper-slide {
+				width: 25%;
+				height: 100%;
+				opacity: 0.4;
+			}
+
+			.mySwiper .swiper-slide-thumb-active {
+				opacity: 1;
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+
+			.swiper-slide .imgSN {
+				height: 150px;
+			}
+
+			.swiper-slide .imgHD {
+				height: 500px;
+			}
+
+			.score-active {
+				color: #ffa900;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="main-wrapper wrapper-2">
+			<header class="header-area sticky-bar">
+				<div class="main-header-wrap">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-2">
+								<div>
+									<a href="../index">
+										<img src="static/image/logo.png" class="logo" alt="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-xl-8 col-lg-8">
+								<div class="main-menu">
+									<nav>
+										<ul>
+											<li class="angle-shape"><a href="../index">Home </a>
+											</li>
+											<li class="angle-shape"><a href="shop-list"> Shop </a>
+												<ul class="mega-menu">
+												</ul>
+											</li>
+											<li><a href="../contact"> Contact </a></li>
+											<li class="angle-shape  angle-shape-pages"><a>Pages</a>
+												<ul class="submenu">
+													<li><a href="../edit-account?id=1">Orders</a></li>
+													<li><a href="../edit-account?id=2">Addresses</a></li>
+													<li><a href="../edit-account?id=3">Account details </a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="col-xl-2 col-lg-2">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style  cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style header-search ml-15">
+										<a class="search-active" href="#"><i class="la la-search"></i></a>
+									</div>
+									<div class="same-style setting-wrap ml-15">
+										<a class="setting-active" href="#"><i class="la la-cog"></i></a>
+										<div class="setting-content">
+											<ul>
+												<li>
+													<h4>Currency</h4>
+													<ul>
+														<li><a href="#">USD</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Language</h4>
+													<ul>
+														<li><a href="#">English (US)</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Account</h4>
+													<ul>
+														<li class="AccountEditAccount"><a
+																href="../edit-account?id=3">Account Details</a>
+														</li>
+														<li class="AccountLogin"><a href="../login">Login</a>
+														</li>
+														<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-small-mobile">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-6">
+								<div class="mobile-logo">
+									<a href="../index">
+										<img alt="" src="static/image/logo.png" class="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style mobile-off-canvas">
+										<a class="mobile-aside-button" href="#"><i class="la la-navicon"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-off-canvas-active">
+				<a class="mobile-aside-close"><i class="la la-close"></i></a>
+				<div class="header-mobile-aside-wrap">
+					<div class="mobile-search">
+						<form class="search-form" action="#">
+							<input type="text" placeholder="Search entire store…" id="livesearch1" onblur="fnSearch(1)">
+							<button class="button-search"><i class="la la-search"></i></button>
+						</form>
+					</div>
+					<div class="mobile-menu-wrap">
+						<!-- mobile menu start -->
+						<div class="mobile-navigation">
+							<!-- mobile menu navigation start -->
+							<nav>
+								<ul class="mobile-menu">
+									<li class="menu-item-has-children"><a href="../index">Home</a>
+									</li>
+									<li class="menu-item-has-children "><a href="../shop-list">shop</a>
+										<ul class="dropdown  mega-menu">
+
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">pages</a>
+										<ul class="dropdown">
+											<li><a href="../edit-account?id=1">Orders</a></li>
+											<li><a href="../edit-account?id=2">Addresses</a></li>
+											<li><a href="../edit-account?id=3">Account details </a></li>
+										</ul>
+									</li>
+									<li><a href="../contact">contact</a></li>
+								</ul>
+							</nav>
+							<!-- mobile menu navigation end -->
+						</div>
+						<!-- mobile menu end -->
+					</div>
+					<div class="mobile-curr-lang-wrap">
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-language-active" href="#">Language <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown lang-dropdown-active">
+								<ul>
+									<li><a href="#">English (US)</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-currency-active" href="#">Currency <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown curr-dropdown-active">
+								<ul>
+									<li><a href="#">USD</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-account-active" href="#">Account<i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown account-dropdown-active">
+								<ul>
+									<li class="AccountEditAccount"><a href="../edit-account?id=3">Account
+											Details</a></li>
+									<li class="AccountLogin"><a href="../login">Login</a></li>
+									<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- search start -->
+			<div class="search-content-wrap main-search-active">
+				<a class="search-close"><i class="la la-close"></i></a>
+				<div class="search-content">
+					<p>Start typing and press Enter to search</p>
+					<form class="search-form" action="#">
+						<input type="text" placeholder="Search entire store…" id="livesearch2" onblur="fnSearch(2)">
+						<button class="button-search"><i class="la la-search"></i></button>
+					</form>
+				</div>
+			</div>
+			<!-- mini cart start -->
+			<div class="sidebar-cart-active">
+				<div class="sidebar-cart-all">
+					<a class="cart-close" href="#"><i class="la la-close"></i></a>
+					<div class="cart-content">
+						<h3>Shopping Cart</h3>
+						<ul id="right_product_list">
+
+						</ul>
+						<div class="cart-total">
+							<h4>Subtotal:<span> £ <span class="total-amount-goods">0.00</span></span></h4>
+						</div>
+						<div class="cart-checkout-btn btn-hover default-btn">
+							<a class="btn-size-md btn-bg-black btn-color" id="cart-view">view cart</a>
+							<a class="no-mrg btn-size-md btn-bg-black btn-color" id="checkout-view">checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="breadcrumb-area pt-95 pb-100 bg-img"
+				style="background-image:url(static/image/breadcrumb.jpg);">
+				<div class="container">
+					<div class="container">
+						<div class="breadcrumb-content text-center">
+							<div class="breadcrumb-title">
+								<h2 class="page-title">{product_title}</h2>
+							</div>
+							<nav aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+								<ul>
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a href="../index" itemprop="item">
+											<span itemprop="name">Home</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</li>
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<a href="shop-list" itemprop="item">
+											<span itemprop="name">Shop</span>
+										</a>
+										<meta itemprop="position" content="2">
+									</li>
+									<li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<span itemprop="name">{product_title}</span>
+										<meta itemprop="position" content="3">
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-details-area pt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+						<div class="single-left">
+							<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+								class="swiper mySwiper2">
+								<div
+									class="swiper-wrapper  swiper-wrapper  lynessa-product-gallery lynessa-product-gallery--with-images lynessa-product-gallery--columns-4">
+									<img style="display: none;" class="emoji" alt="Search Icon"
+										src="static/picture/1f50d.svg">
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Main Product Image"
+											src="https://m.media-amazon.com/images/I/61J1RbEpmIL._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Product Image 2"
+											src="https://m.media-amazon.com/images/I/71GzlPMXGqL._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Product Image 3"
+											src="https://m.media-amazon.com/images/I/81bv7OiOq1L._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Product Image 4"
+											src="https://m.media-amazon.com/images/I/710c47RvRsL._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Product Image 5"
+											src="https://m.media-amazon.com/images/I/616R2QPi+-L._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+									<div class="swiper-slide  lynessa-product-gallery__image "><img class="imgHD"
+											alt="{product_title} - Product Image 6"
+											src="https://m.media-amazon.com/images/I/71KcOz8-xYL._AC_SL1500_.jpg"
+											itemprop="image">
+									</div>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+								<div thumbsSlider="" class="swiper mySwiper">
+								<div class="swiper-wrapper  thumbnail_image">
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 1"
+											src="https://m.media-amazon.com/images/I/41dmdR-106L._AC_.jpg">
+									</div>
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 2"
+											src="https://m.media-amazon.com/images/I/51J6MznRhdL._AC_.jpg">
+									</div>
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 3"
+											src="https://m.media-amazon.com/images/I/513N1osAWeL._AC_.jpg">
+									</div>
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 4"
+											src="https://m.media-amazon.com/images/I/41zWAnT3EVL._AC_.jpg">
+									</div>
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 5"
+											src="https://m.media-amazon.com/images/I/41G6o7nzsZL._AC_.jpg">
+									</div>
+									<div class="swiper-slide"><img class="imgSN"
+											alt="{product_title} - Thumbnail 6"
+											src="https://m.media-amazon.com/images/I/51ZL4x84tZL._AC_.jpg">
+									</div>
+								</div>
+							</div>
+							</div>
+
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="product-details-content ml-30 summary entry-summary" itemscope itemtype="http://schema.org/Product">
+					<h1 id="title" itemprop="name">Products Name Here</h1>
+					<div class="product-details-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+						<span itemprop="price" content="{product_price}">
+							<span class="price" id="price">21.64</span>
+							<span style="font-size: 20px; color: #e32222;" itemprop="priceCurrency" content="USD">$</span>
+						</span>
+						<meta itemprop="availability" content="https://schema.org/InStock">
+						<meta itemprop="url" content="{current_url}">
+					</div>
+					<div class="product-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+						<meta itemprop="ratingValue" content="{product_rating}">
+						<meta itemprop="reviewCount" content="{review_count}">
+						<meta itemprop="bestRating" content="5">
+						<meta itemprop="worstRating" content="1">
+					</div>
+					<p id="description" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi.</p>
+					<div class="product-sku" style="display: none;">
+						<span itemprop="sku">{product_sku}</span>
+						<span itemprop="gtin">{product_gtin}</span>
+						<span itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+							<span itemprop="name">Eliza Store</span>
+						</span>
+					</div>
+
+
+
+								<div id="shopping_trolley" class="variations_form cart" style="margin: 20px 0;">
+									<table>
+										<tbody>
+											<tr>
+												<td class="label"><label>size</label></td>
+												<td class="value">
+													<select id="size" title="box_style" data-attributetype="box_style"
+														data-id="pa_size" class="attribute-select " name="size"
+														data-attribute_name="size" data-show_option_none="yes">
+														<option data-type="" data-pa_size="" value="">Choose an
+															option</option>
+														<option data-width="30" data-height="40" data-pa_size="0"
+															value="Large-X-Large" class="attached enabled">Large-X-Large
+														</option>
+														<option data-width="30" data-height="40" data-pa_size="1"
+															value="Small-Medium" class="attached enabled">Small-Medium
+														</option>
+														<option data-width="30" data-height="40" data-pa_size="2"
+															value="XX-Large" class="attached enabled">XX-Large</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td class="label"><label>color</label></td>
+												<td class="value">
+													<select id="color" title="box_style" data-attributetype="box_style"
+														data-id="pa_color" class="attribute-select " name="color"
+														data-attribute_name="color" data-show_option_none="yes">
+														<option data-type="" data-pa_color="" value="">Choose an
+															option</option>
+														<option data-width="30" data-height="40" data-pa_color="0"
+															value="02-black/Black/Black" class="attached enabled">
+															02-black/Black/Black
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="1"
+															value="03-assorted01" class="attached enabled">03-assorted01
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="2"
+															value="04-assorted02" class="attached enabled">04-assorted02
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="3"
+															value="04-white/Grey/Black" class="attached enabled">
+															04-white/Grey/Black
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="4"
+															value="05-assorted06" class="attached enabled">05-assorted06
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="5"
+															value="06-assorted04" class="attached enabled">06-assorted04
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="6"
+															value="07-assorted07" class="attached enabled">07-assorted07
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="7"
+															value="08-assorted05" class="attached enabled">08-assorted05
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="8"
+															value="10-assorted08" class="attached enabled">10-assorted08
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="9"
+															value="10-assorted30" class="attached enabled">10-assorted30
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="10"
+															value="10-black/Grey/Navy(pocket)" class="attached enabled">
+															10-black/Grey/Navy(pocket)
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="11"
+															value="11-assorted25" class="attached enabled">11-assorted25
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="12"
+															value="12-assorted26" class="attached enabled">12-assorted26
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="13"
+															value="12-light Grey/Dark Pink/Teal"
+															class="attached enabled">12-light Grey/Dark
+															Pink/Teal</option>
+														<option data-width="30" data-height="40" data-pa_color="14"
+															value="13-assorted27" class="attached enabled">13-assorted27
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="15"
+															value="14-assorted28" class="attached enabled">14-assorted28
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="16"
+															value="15-assorted29" class="attached enabled">15-assorted29
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="17"
+															value="24-assorted24" class="attached enabled">24-assorted24
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="18"
+															value="26-assorted10" class="attached enabled">26-assorted10
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="19"
+															value="27-assorted14" class="attached enabled">27-assorted14
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="20"
+															value="28-assorted11" class="attached enabled">28-assorted11
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="21"
+															value="29-assorted12" class="attached enabled">29-assorted12
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="22"
+															value="Assorted16" class="attached enabled">Assorted16
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="23"
+															value="Assorted17" class="attached enabled">Assorted17
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="24"
+															value="Assorted19" class="attached enabled">Assorted19
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="25"
+															value="Assorted20" class="attached enabled">Assorted20
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="26"
+															value="Assorted21" class="attached enabled">Assorted21
+														</option>
+														<option data-width="30" data-height="40" data-pa_color="27"
+															value="Assorted23" class="attached enabled">Assorted23
+														</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="single_variation_wrap">
+									<div class="lynessa-variation single_variation"></div>
+									<div class="lynessa-variation-add-to-cart variations_button ">
+
+										<div class="product-quantity" style="margin: 20px 0;">
+											<div class="cart-plus-minus">
+												<div class="dec qtybutton  qtyminus  quantity-minus-single">
+													-</div>
+												<input class="cart-plus-minus-box integerInput" type="text"
+													name="qtybutton" value="1" id="quantity">
+												<div class="inc qtybutton qtyplus quantity-plus-single">+
+												</div>
+											</div>
+										</div>
+
+										<button id="submitCart" onclick="submitCart()"
+											class="single_add_to_cart_button button alt lynessa-variation-selection-needed">
+											Add to cart
+										</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="description-review-area" style="margin-top: 20px;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="description-review-wrapper">
+									<div class="description-review-topbar nav">
+										<a class="active" data-toggle="tab" href="#des-details1">Description</a>
+										<a data-toggle="tab" href="#des-details3">Additional information</a>
+										<a data-toggle="tab" href="#des-details2">Reviews</a>
+									</div>
+									<div class="tab-content description-review-bottom">
+										<div id="des-details1" class="tab-pane active">
+											<div class="product-description-wrapper">
+												<p>Pellentesque orci lectus, bibendum iaculis aliquet id, ullamcorper
+													nec
+													ipsum. In laoreet ligula vitae tristique viverra. Suspendisse augue
+													nunc, laoreet in arcu ut, vulputate malesuada justo. Donec porttitor
+													elit justo, sed lobortis nulla interdum et. Sed lobortis sapien ut
+													augue
+													condimentum, eget ullamcorper nibh lobortis. Cras ut bibendum
+													libero.
+													Quisque in nisl nisl. Mauris vestibulum leo nec pellentesque
+													sollicitudin.</p>
+												<p>Pellentesque lacus eros, venenatis in iaculis nec, luctus at eros.
+													Phasellus id gravida magna. Maecenas fringilla auctor diam
+													consectetur
+													placerat. Suspendisse non convallis ligula. Aenean sagittis eu erat
+													quis
+													efficitur. Maecenas volutpat erat ac varius bibendum. Ut tincidunt,
+													sem
+													id tristique commodo, nunc diam suscipit lectus, vel</p>
+											</div>
+										</div>
+										<div id="des-details3" class="tab-pane">
+											<div class="product-anotherinfo-wrapper">
+												<ul>
+													<li><span>Weight</span> 400 g</li>
+													<li><span>Dimensions</span>10 x 10 x 15 cm </li>
+													<li><span>Materials</span> 60% cotton, 40% polyester</li>
+													<li><span>Other Info</span> American heirloom jean shorts pug seitan
+														letterpress</li>
+												</ul>
+											</div>
+										</div>
+										<div id="des-details2" class="tab-pane">
+											<div id="reviews" class="lynessa-Reviews">
+												<div id="review_form_wrapper">
+													<div class="comments-data">
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="col-lg-4 col-md-4">
+								<div class="pro-dec-banner">
+									<a href="#"><img src="static/picture/banner-4.png" alt=""></a>
+								</div>
+							</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="product-area pb-100">
+						<div class="container">
+							<div class="section-title text-center mb-45">
+								<h2>Related products</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+							<div class="tab-content jump">
+								<div>
+									<div class="row" id="products-list">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="foot">
+
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">x</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-5 col-sm-12 col-xs-12">
+											<div class="tab-content quickview-big-img">
+												<div id="pro-1" class="tab-pane fade show active">
+													<img src="static/picture/quickview-l1.jpg" alt="">
+												</div>
+												<div id="pro-2" class="tab-pane fade">
+													<img src="static/picture/quickview-l2.jpg" alt="">
+												</div>
+												<div id="pro-3" class="tab-pane fade">
+													<img src="static/picture/quickview-l3.jpg" alt="">
+												</div>
+												<div id="pro-4" class="tab-pane fade">
+													<img src="static/picture/quickview-l2.jpg" alt="">
+												</div>
+											</div>
+											<!-- Thumbnail Large Image End -->
+											<!-- Thumbnail Image End -->
+											<div class="quickview-wrap mt-15">
+												<div class="quickview-slide-active owl-carousel nav nav-style-2"
+													role="tablist">
+													<a class="active" data-toggle="tab" href="#pro-1"><img
+															src="static/picture/quickview-s1.jpg" alt=""></a>
+													<a data-toggle="tab" href="#pro-2"><img
+															src="static/picture/quickview-s2.jpg" alt=""></a>
+													<a data-toggle="tab" href="#pro-3"><img
+															src="static/picture/quickview-s3.jpg" alt=""></a>
+													<a data-toggle="tab" href="#pro-4"><img
+															src="static/picture/quickview-s2.jpg" alt=""></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-7 col-sm-12 col-xs-12">
+											<div class="product-details-content quickview-content">
+												<h2>Products Name Here</h2>
+												<div class="product-details-price">
+													<span>$18.00 </span>
+													<span class="old">$20.00 </span>
+												</div>
+												<div class="pro-details-rating-wrap">
+													<div class="pro-details-rating">
+														<i class="la la-star"></i>
+														<i class="la la-star"></i>
+														<i class="la la-star"></i>
+														<i class="la la-star"></i>
+														<i class="la la-star-half-o"></i>
+													</div>
+													<span>3 Reviews</span>
+												</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor
+													incidid ut
+													labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+													exercitation ullamco</p>
+												<div class="pro-details-list">
+													<ul>
+														<li>- 0.5 mm Dail</li>
+														<li>- Inspired vector icons</li>
+														<li>- Very modern style </li>
+													</ul>
+												</div>
+												<div class="pro-details-size-color">
+													<div class="pro-details-color-wrap">
+														<span>Color</span>
+														<div class="pro-details-color-content">
+															<ul>
+																<li class="blue"></li>
+																<li class="maroon active"></li>
+																<li class="gray"></li>
+																<li class="green"></li>
+																<li class="yellow"></li>
+																<li class="white"></li>
+															</ul>
+														</div>
+													</div>
+													<div class="pro-details-size">
+														<span>Size</span>
+														<div class="pro-details-size-content">
+															<ul>
+																<li><a href="#">s</a></li>
+																<li><a href="#">m</a></li>
+																<li><a href="#">l</a></li>
+																<li><a href="#">xl</a></li>
+																<li><a href="#">xxl</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="pro-details-quality">
+													<div class="cart-plus-minus">
+														<input class="cart-plus-minus-box" type="text" name="qtybutton"
+															value="2">
+													</div>
+													<div class="pro-details-cart btn-hover">
+														<a href="#">Add To Cart</a>
+													</div>
+													<div class="pro-details-wishlist">
+														<a title="Add To Wishlist" href="#"><i
+																class="la la-heart-o"></i></a>
+													</div>
+													<div class="pro-details-compare">
+														<a title="Add To Compare" href="#"><i
+																class="la la-refresh"></i></a>
+													</div>
+												</div>
+												<div class="pro-details-meta" itemprop="category">
+												<span>Categories :</span>
+												<ul>
+													<li><a href="category/minimal" rel="tag">{category_1},</a></li>
+													<li><a href="category/furniture" rel="tag">{category_2},</a></li>
+													<li><a href="category/fashion" rel="tag">{category_3}</a></li>
+												</ul>
+											</div>
+											<div class="pro-details-meta">
+												<span>Tag :</span>
+												<ul itemprop="keywords">
+													<li><a href="tag/fashion" rel="tag">{tag_1}, </a></li>
+													<li><a href="tag/furniture" rel="tag">{tag_2},</a></li>
+													<li><a href="tag/electronic" rel="tag">{tag_3}</a></li>
+												</ul>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<input value="868" id="goods_id" type="hidden">
+		<input
+			value="3_Pack_Leggings_for_WomenNo_SeeThrough_High_Waisted_Tummy_Control_Yoga_Pants_Workout_Running_Legging"
+			id="goods_handleTitle" type="hidden">
+		<input
+			value="3 Pack Leggings for Women-No See-Through High Waisted Tummy Control Yoga Pants Workout Running Legging"
+			id="goods_title" type="hidden">
+		<input value="2" id="goods_classify" type="hidden">
+
+		<!-- SEO Hidden Metadata -->
+		<div style="display: none;" itemscope itemtype="http://schema.org/Product">
+			<span itemprop="model">{product_model}</span>
+			<span itemprop="mpn">{product_mpn}</span>
+			<span itemprop="productID">{product_id}</span>
+			<span itemprop="category">{product_category}</span>
+			<div itemprop="manufacturer" itemscope itemtype="http://schema.org/Organization">
+				<span itemprop="name">{manufacturer_name}</span>
+			</div>
+			<div itemprop="review" itemscope itemtype="http://schema.org/Review">
+				<span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+					<span itemprop="ratingValue">{review_rating}</span>
+					<span itemprop="bestRating">5</span>
+				</span>
+				<span itemprop="author">{review_author}</span>
+			</div>
+		</div>
+
+
+				<!-- Modernizer JS -->
+				<script src="static/js/modernizr-2.8.3.min.js"></script>
+				<!-- jQuery JS -->
+				<script src="static/js/jquery-3.3.1.min.js"></script>
+
+				<script src="static/js/jquery-1.12.4.min.js"></script>
+
+				<!-- Popper JS -->
+				<script src="static/js/popper.min.js"></script>
+				<!-- Bootstrap JS -->
+				<script src="static/js/bootstrap.min.js"></script>
+
+				<!-- Slick Slider JS -->
+				<script src="static/js/countdown.js"></script>
+				<script src="static/js/counterup.js"></script>
+				<!--<script src="assets/js/plugins/instafeed.js"></script>-->
+				<script src="static/js/jquery-ui.js"></script>
+				<script src="static/js/jquery-ui-touch-punch.js"></script>
+				<script src="static/js/magnific-popup.js"></script>
+				<script src="static/js/owl-carousel.js"></script>
+				<script src="static/js/scrollup.js"></script>
+				<script src="static/js/waypoints.js"></script>
+				<script src="static/js/wow.js"></script>
+				<script src="static/js/slick.js"></script>
+				<script src="static/js/elevatezoom.js"></script>
+				<script src="static/js/sticky-sidebar.js"></script>
+				<script src="static/js/ajax-mail.js"></script>
+				<!-- Main JS -->
+				<script src="static/js/main.js"></script>
+				<script src="static/js/jquery.toast.js"></script>
+				<script src="static/js/swiper-bundle.min.js"></script>
+
+				<script src="static/js/jquery.zoom.min.js"></script>
+				<script src="static/js/mobilemenu.js" type="module"></script>
+				<script src="static/ajaxJs/js/head.js" type="module"></script>
+				<script src="static/ajaxJs/js/cart.js" type="module"></script>
+				<script src="static/ajaxJs/js/swiper.js" type="module"></script>
+				<script src="static/ajaxJs/js/single-product-template.js" type="module"></script>
+				<link rel="stylesheet" href="static/css/common.css">
+
+				<script type="text/javascript">
+					var commentsList = [{
+						user: "用户名",
+						purchase_model: "purchase_model",
+						content: "contentcontentcontentcontentcontent",
+						score: 4,
+						date: "2202-02-02"
+					}]
+					var specsArr = [{
+							"id": 40667,
+							"goods_id": 868,
+							"selling_price": "8.95",
+							"size": "",
+							"style": "",
+							"model": "Double-Sided Adhesive",
+							"color": "Double-Sided Adhesive",
+							"weight": "0.8 ounces",
+							"monetary": "\u7f8e\u5143",
+							"description": "? HOLDS CLOTHING STEADY - Fearless double-sided tape will hold your clothing and hemlines comfortably against your skin or undergarments to keep your outfit refined and elegant all day long. No more embarrassing slips, visible straps or sagging necklines. Each strip is 1\/2\" wide X 3\" long<br>? SAFE ON SKIN - Our special adhesive is designed to be skin safe and not cause irritation when applied directly to skin. Do not apply to irritated, sunburned, or sensitive skin. Pretest for sensitivity<br>? FABRIC FRIENDLY - Stop ruining your clothing and fabrics with holes from metal pins! Unlike pins, our double-sided tape is invisible to everyone but you! There are no lumpy marks or lines that often appear with metal pins. Be sure and pretest your fabrics and make sure your fabric is clean. Use a lint roller to prepare the fabric for use and use rubbing alcohol if any residue remains after removing<br>? MOVE WITH CONFIDENCE - Professional women and super moms are always on the go! That's why our tape is built to hold up to movement and real life use. No need to stand like a statue to maintain your perfect silhouette. Feel free and fearless in wedding dresses, prom gowns or stylish everyday attire<br>? USAGE - Make sure that your skin and fabric are clean, dry, and oil free. Avoid touching the adhesive as much as possible, the oils on your fingers can compromise the effectiveness of the adhesive. Using Fearless Tape in extreme weather including excessive heat, humidity, and cold, can also lead to a lower performing tape<br>? GET THE MOST OUT OF YOUR TAPE \\u2013 The key to getting the most out of your Fearless Tape is to only apply it to skin and fabric that is clean and dry and to avoid touching the tape adhesive with your fingers. Use rubbing alcohol to clean your skin and a lint roller to clean your fabric before applying. See video on the detail page for full instructions",
+							"thumbnail_image": [
+								"https:\/\/m.media-amazon.com\/images\/I\/411KXO2w8tL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41aLEt1+5qL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41Z+IHzTgRL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/415+7MWUJ0L._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41uKS6PVObL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41y9eHfMhOL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/51DFl4oCnuL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/414Z21YRNAL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41J0FXHcYNL._AC_.jpg"
+							],
+							"images": ["https:\/\/m.media-amazon.com\/images\/I\/71ko4Tq+b1L._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/81IGQAtYf2L._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/81kb4Mk63aL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/91H0gl74eAL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/71BdIm3XIWL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/71VMx0h3xhL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/91E+kuUfWnL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/81Xp6q4GflL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/71paypykd1L._AC_SL1500_.jpg"
+							]
+						},
+						{
+							"id": 40669,
+							"goods_id": 868,
+							"selling_price": "10.49",
+							"size": "",
+							"style": "",
+							"model": "Delicate Fabric",
+							"color": "Delicate Fabric",
+							"weight": "0.8 ounces",
+							"monetary": "\u7f8e\u5143",
+							"description": "Superior Adhesive Technology: Our Fearless Delicate Fabric Tape provides a strong and durable hold on a variety of delicate fabrics, ensuring your clothes stay in place all day without damaging the material<br>Gentle on Delicate Fabrics: Designed specifically for thin and fragile materials like silk, chiffon, and lace, this double-sided tape ensures a gentle hold without tearing or leaving residue on your garments<br>Effortless Application: With a user-friendly design, simply apply the printed liner side to your skin and press the delicate fabric onto the unprinted liner side for a secure and comfortable fit<br>Comfortable All Day Wear: Featuring a skin-friendly adhesive, the Fearless Delicate Fabric Tape provides a comfortable hold, making it perfect for long-lasting wear without irritation<br>Versatile Usage: Ideal for various applications, including clothing and body, this double-sided tape offers a reliable solution to keep your fabrics in place, enhancing your confidence and style",
+							"thumbnail_image": [
+								"https:\/\/m.media-amazon.com\/images\/I\/41s0QyejPaL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41hF-cAeb1L._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/3109+hu9FjL._AC_.jpg"
+							],
+							"images": ["https:\/\/m.media-amazon.com\/images\/I\/91DgvI1pvHL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/91WRpcCdIbL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/71EqtvaTj-L._AC_SL1500_.jpg"
+							]
+						},
+						{
+							"id": 40674,
+							"goods_id": 868,
+							"selling_price": "9.09",
+							"size": "",
+							"style": "",
+							"model": "Sensitive Skin",
+							"color": "Sensitive Skin",
+							"weight": "0.8 ounces",
+							"monetary": "\u7f8e\u5143",
+							"description": "? HOLDS CLOTHING STEADY - Fearless Sensitive Skin double sided tape will hold your clothing and hemlines comfortably against your skin or undergarments to keep your outfit refined, classy and elegant all day long. No more embarrassing slips, visible straps or sagging necklines. Each strip is 1\/2\" wide X 3\" long.<br>? SAFE ON SKIN - Our special medical-grade adhesive is hypoallergenic, designed to be extra skin safe, and doesn't cause irritation when applied directly to your skin. We use safe materials that are comfortable all day long, but also wash off easily, so you don't have to deal with annoying residue or unsightly glue marks.<br>? FABRIC FRIENDLY - Stop ruining your clothing and fabrics with holes from metal pins! Unlike pins, our double sided tape is invisible to everyone but you! There are no lumpy marks or lines that often appear with metal pins. Our adhesive is designed to not leave residue on your fabric after removal.<br>? MOVE WITH CONFIDENCE - Professional women and super moms are always on the go! That's why our tape is built to hold up to movement and real life use. No need to stand like a statue to maintain your perfect silhouette. Feel free and fearless in wedding dresses, prom gowns or stylish everyday attire.<br>? BE FEARLESS - Women, moms and teens all over the USA love our tape because they can be fearless with their outfits and their unique personal style.<br>? USAGE - Make sure that your skin and fabric are clean, dry, and oil free. Avoid touching the adhesive as much as possible, the oils on your fingers can compromise the effectiveness of the adhesive. Using Fearless Tape in extreme weather including excessive heat, humidity, and cold, can also lead to a lower performing tape.",
+							"thumbnail_image": [
+								"https:\/\/m.media-amazon.com\/images\/I\/41+QZnFU2yL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/21smZfxvR6L._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/51GEbE2KaWL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41U5wavSH0L._AC_.jpg"
+							],
+							"images": ["https:\/\/m.media-amazon.com\/images\/I\/81lGdPo-YeL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/61DLqLTxjaL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/91lxqc1P+nL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/81D7Bo9lBTL._AC_SL1500_.jpg"
+							]
+						},
+						{
+							"id": 40676,
+							"goods_id": 868,
+							"selling_price": "8.95",
+							"size": "",
+							"style": "",
+							"model": "Extra Wide",
+							"color": "Extra Wide",
+							"weight": "0.8 ounces",
+							"monetary": "\u7f8e\u5143",
+							"description": "High Adhesion: Ideal for cloth & skin, ensuring secure hold<br>Waterproof: Withstands sweat & water, perfect for all weather<br>Size & Quantity: Large (3.4 x 1 inches) in a 36-strip pack<br>Transparent Color: Blends seamlessly with all skin shades",
+							"thumbnail_image": [
+								"https:\/\/m.media-amazon.com\/images\/I\/41TUBTdsAfL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41PlLvnPZBL._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/41BdyLYeM2L._AC_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/31g9mzn8oIL._AC_.jpg"
+							],
+							"images": ["https:\/\/m.media-amazon.com\/images\/I\/719fAk5HazL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/719Xg8C1djL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/817g-UQ1OoL._AC_SL1500_.jpg",
+								"https:\/\/m.media-amazon.com\/images\/I\/51LBMGZQsuL._AC_SL1500_.jpg"
+							]
+						}
+					];
+				</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,715 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Checkout</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" /> 
+
+		<!-- CSS
+	============================================ -->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<!-- Icon Font CSS -->
+		<link rel="stylesheet" href="static/css/line-awesome.css">
+		<link rel="stylesheet" href="static/css/themify.css">
+
+		<!-- othres CSS -->
+		<link rel="stylesheet" href="static/css/animate.css">
+		<link rel="stylesheet" href="static/css/owl-carousel.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/css/jquery-ui.css">
+		<link rel="stylesheet" href="static/css/slick.css">
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/common.css">
+		<link type="text/css" rel="stylesheet" href="static/css/jquery.toast.css">
+		<link rel="stylesheet" type="text/css" href="static/css/line-awesome.css">
+		<style>
+			.country_select {
+				border: 2px solid #eceff8;
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main-wrapper wrapper-2">
+			<header class="header-area sticky-bar">
+				<div class="main-header-wrap">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-2">
+								<div>
+									<a href="index">
+										<img src="static/image/logo.png" alt="logo" class="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-xl-8 col-lg-8">
+								<div class="main-menu">
+									<nav>
+										<ul>
+											<li class="angle-shape"><a href="index">Home </a>
+											</li>
+											<li class="angle-shape"><a href="shop-list"> Shop </a>
+										<ul class="mega-menu">
+										</ul>
+									</li>
+									<li><a href="blog"> Blog </a></li>
+									<li><a href="contact"> Contact </a></li>
+											<li class="angle-shape  angle-shape-pages"><a>Pages</a>
+												<ul class="submenu">
+													<li><a href="edit-account?id=1">Orders</a></li>
+													<li><a href="edit-account?id=2">Addresses</a></li>
+													<li><a href="edit-account?id=3">Account details </a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="col-xl-2 col-lg-2">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style  cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style header-search ml-15">
+										<a class="search-active" href="#"><i class="la la-search"></i></a>
+									</div>
+									<div class="same-style setting-wrap ml-15">
+										<a class="setting-active" href="#"><i class="la la-cog"></i></a>
+										<div class="setting-content">
+											<ul>
+												<li>
+													<h4>Currency</h4>
+													<ul>
+														<li><a href="#">USD</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Language</h4>
+													<ul>
+														<li><a href="#">English (US)</a></li>
+													</ul>
+												</li>
+												<li>
+													<h4>Account</h4>
+													<ul>
+														<li class="AccountEditAccount"><a
+																href="./edit-account?id=3">Account Details</a></li>
+														<li class="AccountLogin"><a href="./login">Login</a>
+														</li>
+														<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-small-mobile">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-6">
+								<div class="mobile-logo">
+									<a href="index">
+										<img alt="" src="static/image/logo.png" class="logo">
+									</a>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="header-right-wrap">
+									<div class="same-style cart-wrap">
+										<a href="#" class="cart-active">
+											<i class="la la-shopping-cart"></i>
+											<span class="count-style cart-num">0</span>
+										</a>
+									</div>
+									<div class="same-style mobile-off-canvas">
+										<a class="mobile-aside-button" href="#"><i class="la la-navicon"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-off-canvas-active">
+				<a class="mobile-aside-close"><i class="la la-close"></i></a>
+				<div class="header-mobile-aside-wrap">
+					<div class="mobile-search">
+						<form class="search-form" action="#">
+							<input type="text" placeholder="Search entire store…" id="livesearch1" onblur="fnSearch(1)">
+							<button class="button-search"><i class="la la-search"></i></button>
+						</form>
+					</div>
+					<div class="mobile-menu-wrap">
+						<!-- mobile menu start -->
+						<div class="mobile-navigation">
+							<!-- mobile menu navigation start -->
+							<nav>
+								<ul class="mobile-menu">
+									<li class="menu-item-has-children"><a href="index">Home</a>
+									</li>
+									<li class="menu-item-has-children "><a href="shop-list">shop</a>
+										<ul class="dropdown  mega-menu">
+
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">pages</a>
+										<ul class="dropdown">
+											<li><a href="edit-account?id=1">Orders</a></li>
+											<li><a href="edit-account?id=2">Addresses</a></li>
+											<li><a href="edit-account?id=3">Account details </a></li>
+										</ul>
+									</li>
+									<li><a href="contact">contact</a></li>
+								</ul>
+							</nav>
+							<!-- mobile menu navigation end -->
+						</div>
+						<!-- mobile menu end -->
+					</div>
+					<div class="mobile-curr-lang-wrap">
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-language-active" href="#">Language <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown lang-dropdown-active">
+								<ul>
+									<li><a href="#">English (US)</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-currency-active" href="#">Currency <i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown curr-dropdown-active">
+								<ul>
+									<li><a href="#">USD</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="single-mobile-curr-lang">
+							<a class="mobile-account-active" href="#">Account<i class="la la-angle-down"></i></a>
+							<div class="lang-curr-dropdown account-dropdown-active">
+								<ul>
+									<li class="AccountEditAccount"><a href="./edit-account?id=3">Account
+											Details</a></li>
+									<li class="AccountLogin"><a href="./login">Login</a></li>
+									<li class="AccountLogOut" onclick="fnLogout()"> <a>Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- search start -->
+			<div class="search-content-wrap main-search-active">
+				<a class="search-close"><i class="la la-close"></i></a>
+				<div class="search-content">
+					<p>Start typing and press Enter to search</p>
+					<form class="search-form" action="#">
+						<input type="text" placeholder="Search entire store…" id="livesearch2" onblur="fnSearch(2)">
+						<button class="button-search"><i class="la la-search"></i></button>
+					</form>
+				</div>
+			</div>
+			<!-- mini cart start -->
+			<div class="sidebar-cart-active">
+				<div class="sidebar-cart-all">
+					<a class="cart-close" href="#"><i class="la la-close"></i></a>
+					<div class="cart-content">
+						<h3>Shopping Cart</h3>
+						<ul id="right_product_list">
+
+						</ul>
+						<div class="cart-total">
+							<h4>Subtotal:<span> £ <span class="total-amount-goods">0.00</span></span></h4>
+						</div>
+						<div class="cart-checkout-btn btn-hover default-btn">
+							<a class="btn-size-md btn-bg-black btn-color" id="cart-view">view cart</a>
+							<a class="no-mrg btn-size-md btn-bg-black btn-color" id="checkout-view">checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="breadcrumb-area pt-95 pb-100 bg-img" style="background-image:url(static/image/breadcrumb.jpg);">
+				<div class="container">
+					<div class="breadcrumb-content text-center">
+						<div class="breadcrumb-title">
+							<h2>checkout page</h2>
+						</div>
+						<ul>
+							<li>
+								<a href="index">Home</a>
+							</li>
+							<li class="active">checkout </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="checkout-main-area pt-100 pb-100">
+				<div class="container">
+					<div class="customer-zone mb-20">
+						<div class="checkout-login-info">
+							<form action="#">
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<div class="sin-checkout-login">
+											<label>Username or email address <span>*</span></label>
+											<input type="text" name="user-name">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="sin-checkout-login">
+											<label>Passwords <span>*</span></label>
+											<input type="password" name="user-password">
+										</div>
+									</div>
+								</div>
+								<div class="button-remember-wrap">
+									<button class="button" type="submit">Login</button>
+									<div class="checkout-login-toggle-btn">
+										<input type="checkbox">
+										<label>Remember me</label>
+									</div>
+								</div>
+								<div class="lost-password">
+									<a href="#">Lost your password?</a>
+								</div>
+							</form>
+							<div class="checkout-login-social">
+								<span>Login with:</span>
+								<ul>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="checkout-wrap pt-30">
+						<form name="checkout" id="checkout-form">
+							<div class="row">
+
+								<div class="col-lg-7">
+									<div class="billing-info-wrap mr-50">
+										<h3>Billing Details</h3>
+										<div class="row">
+											<div class="col-lg565-6 col-md-6">
+												<div class="billing-info mb-20">
+													<label>First Name <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="text" name="bill_firstname" id="bill_firstname"
+														placeholder="Enter First Name">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6">
+												<div class="billing-info mb-20">
+													<label>Last Name <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="text" name="bill_lastname"
+														placeholder="Enter Last Name" id="bill_lastname"></>
+												</div>
+											</div>
+
+											<div class="col-lg-12">
+												<div class="billing-info mb-20">
+													<label>Country <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="text" name="bill_country"
+														placeholder="Search and find country" id="bill_country"
+														onclick="showOption('bill_country')"
+														oninput="selectSearch(this.value,'country','bill')"
+														autocomplete="off">
+
+													<div class="bill_country_iop-list select-hidden">
+
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12">
+												<div class="billing-info mb-20">
+													<label>State / County <abbr class="required"
+															title="required">*</abbr>
+														<i id="bill_state_spinner" class="spin  las la-spinner"
+															style="display: none;"></i>
+													</label>
+													<input type="text" name="bill_state"
+														placeholder="Search and find state" id="bill_state"
+														oninput="selectSearch(this.value,'state','bill')"
+														autocomplete="off">
+
+													<div class="bill_state_iop-list select-hidden">
+
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="billing-info mb-20">
+													<label>Town / City <abbr class="required" title="required">*</abbr>
+														<i id="bill_city_spinner" class="spin  las la-spinner"
+															style="display: none;"></i>
+													</label>
+													<input type="text" name="bill_city"
+														placeholder="Search and find city" id="bill_city"
+														oninput="selectSearch(this.value,'city','bill')"
+														autocomplete="off">
+													<div class="bill_city_iop-list select-hidden">
+
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12">
+												<div class="billing-info mb-20">
+													<label>Street Address <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="text" name="bill_street" id="bill_street"
+														placeholder="House number and street name" value=""
+														autocomplete="address-line1"
+														data-placeholder="House number and street name">
+												</div>
+											</div>
+
+											<div class="col-lg-12 col-md-12">
+												<div class="billing-info mb-20">
+													<label>Postcode / ZIP <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="text" name="bill_zip" id="bill_zip"
+														placeholder="House number and street name" value=""
+														data-placeholder="House number and street name">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="billing-info mb-20">
+													<label>Phone <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="tel" name="bill_phone" id="bill_phone"
+														placeholder="Phone" value="" autocomplete="tel">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="billing-info mb-20">
+													<label>Email Address <abbr class="required"
+															title="required">*</abbr></label>
+													<input type="email" class="input-text " name="bill_email"
+														id="bill_email" placeholder="" value=""
+														autocomplete="email username">
+												</div>
+											</div>
+										</div>
+										<div class="checkout-account mb-25">
+											<label>
+												<input class="checkout-toggle2" id="toggle-checkbox" type="checkbox"
+													value="1">
+												<span>Create an account?</span>
+											</label>
+										</div>
+										<div class="different-address open-toggle2">
+											<div class="checkout-account-toggle  mb-30">
+												<label>Account username</label>
+												<input type="tel" class="input-text " id="ship_username"
+													autocomplete="tel">
+											</div>
+											<div class="checkout-account-toggle  mb-30">
+												<label>Account password</label>
+												<input type="password" class="input-text " id="ship_password"
+													autocomplete="user password">
+											</div>
+										</div>
+
+
+										<div class="checkout-account mt-25">
+											<label>
+												<input id="toggle2-checkbox" class="checkout-toggle" type="checkbox"
+													value="1">
+												<span>Ship to a different address?</span>
+											</label>
+										</div>
+
+										<div class="different-address open-toggle mt-30">
+											<div class="row">
+												<div class="col-lg-6 col-md-6">
+													<div class="billing-info mb-20">
+														<label>First Name</label>
+														<input type="text" class="input-text " name="ship_firstname"
+															id="ship_firstname" placeholder="" value=""
+															autocomplete="given-name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6">
+													<div class="billing-info mb-20">
+														<label>Last Name</label>
+														<input type="text" class="input-text " name="ship_lastname"
+															id="ship_lastname">
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="billing-info mb-20">
+														<label>Country</label>
+														<input type="text" class="input-text " name="ship_country"
+															placeholder="Search and find country" id="ship_country"
+															onclick="showOption('ship_country')"
+															oninput="selectSearch(this.value,'country','ship')"
+															autocomplete="off">
+														<div class="ship_country_iop-list select-hidden">
+
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="billing-info mb-20">
+														<label>State / County
+															<span>
+																<i id="ship_state_spinner" class="spin  las la-spinner"
+																	style="display: none;"></i>
+															</span>
+														</label>
+														<input type="text" class="input-text " name="ship_state"
+															placeholder="Search and find state" id="ship_state"
+															oninput="selectSearch(this.value,'state','ship')"
+															autocomplete="off">
+
+														<div class="ship_state_iop-list select-hidden">
+
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="billing-info mb-20">
+														<label>Town / City
+															<i id="ship_city_spinner" class="spin  las la-spinner"
+																style="display: none;"></i>
+														</label>
+														<input type="text" class="input-text " name="ship_city"
+															placeholder="Search and find city" id="ship_city"
+															oninput="selectSearch(this.value,'city','ship')"
+															autocomplete="off">
+
+														<div class="ship_city_iop-list select-hidden">
+
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="billing-info mb-20">
+														<label>Street Address</label>
+														<input type="text" class="input-text " name="ship_street"
+															id="ship_street" placeholder="House number and street name"
+															value="" autocomplete="address-line1"
+															data-placeholder="House number and street name">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6">
+													<div class="billing-info mb-20">
+														<label>Postcode / ZIP</label>
+														<input type="text" class="input-text " name="ship_zip"
+															id="ship_zip" placeholder="" value=""
+															autocomplete="postal-code">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6">
+													<div class="billing-info mb-20">
+														<label>Phone</label>
+														<input type="tel" class="input-text " name="ship_phone"
+															id="ship_phone" placeholder="" value="" autocomplete="tel">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6">
+													<div class="billing-info mb-20">
+														<label>Email Address</label>
+														<input type="email" class="input-text " name="ship_email"
+															id="ship_email" autocomplete="email username">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-info-wrap">
+											<label>Order notes</label>
+											<textarea name="remark" class="input-text " id="remark"
+												placeholder="Notes about your order, e.g. special notes for delivery."
+												rows="2" cols="5"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-5">
+									<div class="your-order-area">
+										<h3>Your order</h3>
+										<div class="your-order-wrap gray-bg-4">
+											<div class="your-order-info-wrap">
+												<div class="your-order-info">
+													<ul>
+														<li>Product <span>Total</span></li>
+													</ul>
+												</div>
+												<div class="your-order-middle">
+													<ul id="checkout-tbody">
+
+													</ul>
+												</div>
+												<div class="your-order-info order-total">
+													<div>Shipping</div>
+
+													<div class="payment-method">
+														<div class="pay-top sin-payment">
+															<label style="padding: 5px 0;" for="shipping0">
+																<input type="radio" name="shipping" value="0" checked
+																	id="shipping0" />
+																<span>Free Shipping<span>
+															</label>
+															<label style="padding: 5px 0;" for="shipping1">
+																<input type="radio" name="shipping" value="1"
+																	id="shipping1" />
+																<span>Express Shipping:$ <span
+																		id="shipping-cost">0.00</span></span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="your-order-info order-total">
+													<ul>
+														<li>Subtotal <span>$ <span id="subtotal">0.00</span></span>
+														</li>
+													</ul>
+												</div>
+												<div class="your-order-info order-total">
+													<ul>
+														<li>Total <span>$ <span id="settlementMoney">0.00</span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="your-order-area">
+										<div>
+											<h4>Payment Method</h4>
+											<div>
+
+												<div class="payment-options single-payment">
+													<div class="payment-option" id="paypal-option">
+														<input class="payentradio" type="radio" id="paypal" name="payment-method" value="paypal" checked>
+														<label for="paypal">
+															<div class="option-content">
+																<div class="option-icon paypal-icon"></div>
+																<div class="option-text">
+																	<span class="option-title">PayPal</span>
+																	<span class="option-description">Pay with your PayPal account</span>
+																</div>
+															</div>
+														</label>
+													</div>
+
+													<div class="payment-option" id="credit-card-option">
+														<input class="payentradio" type="radio" id="credit-card" name="payment-method" value="credit-card">
+														<label for="credit-card">
+															<div class="option-content">
+																<div class="option-icon credit-card-icon"></div>
+																<div class="option-text">
+																	<span class="option-title">Credit Card</span>
+																	<span class="option-description">Pay with Visa, Mastercard, etc.</span>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+
+												<div id="credit-card-form" class="payment-form hidden">
+													<div class="form-group">
+														<label for="card-number">Card Number</label>
+														<div class="card-input-wrapper">
+															<input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+															<div id="card-brand-icon" class="card-brand-icon"></div>
+														</div>
+														<div id="card-type" class="card-type-message"></div>
+													</div>
+
+													<div class="form-row">
+														<div class="form-group half">
+															<label for="expiry-date">Expiry Date</label>
+															<input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5">
+														</div>
+
+														<div class="form-group half">
+															<label for="cvc">CVC</label>
+															<input type="text" id="cvc" placeholder="123" maxlength="4">
+														</div>
+													</div>
+												</div>
+
+												<div id="card-error" class="error-message"></div>
+
+
+
+											</div>
+										</div>
+
+
+										<div class="Place-order mt-40 ">
+											<a id="place_order">Place Order</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+
+			</div>
+		</div>
+
+		<!-- JS
+============================================ -->
+
+		<!-- Modernizer JS -->
+		<script src="static/js/modernizr-2.8.3.min.js"></script>
+		<!-- jQuery JS -->
+		<script src="static/js/jquery-3.3.1.min.js"></script>
+		<!-- Popper JS -->
+		<script src="static/js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="static/js/bootstrap.min.js"></script>
+
+		<!-- Slick Slider JS -->
+		<script src="static/js/countdown.js"></script>
+		<script src="static/js/counterup.js"></script>
+		<!--<script src="assets/js/plugins/instafeed.js"></script>-->
+		<script src="static/js/jquery-ui.js"></script>
+		<script src="static/js/jquery-ui-touch-punch.js"></script>
+		<script src="static/js/magnific-popup.js"></script>
+		<script src="static/js/owl-carousel.js"></script>
+		<script src="static/js/scrollup.js"></script>
+		<script src="static/js/waypoints.js"></script>
+		<script src="static/js/wow.js"></script>
+		<script src="static/js/slick.js"></script>
+		<script src="static/js/elevatezoom.js"></script>
+		<script src="static/js/sticky-sidebar.js"></script>
+		<script src="static/js/ajax-mail.js"></script>
+		<!-- Main JS -->
+		<script src="static/js/main.js"></script>
+		<script src="static/js/jquery.toast.js"></script>
+		<script src="static/ajaxJs/js/cart.js" type="module"></script>
+		<script src="static/ajaxJs/js/head.js" type="module"></script>
+		<script src="static/ajaxJs/js/checkout.js" type="module"></script>
+		<script src="static/ajaxJs/common/region-verify.js" type="module"></script>
+
+
+	</body>
+
+</html>

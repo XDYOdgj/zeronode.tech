@@ -1,0 +1,372 @@
+/* 博客卡片样式 - 大气黑白灰设计 */
+.blog-wrap {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 100%;
+    border: 1px solid rgba(233, 236, 239, 0.8);
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 28px;
+    backdrop-filter: blur(10px);
+}
+
+.blog-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #212529 0%, #495057 25%, #6c757d 50%, #495057 75%, #212529 100%);
+    background-size: 300% 100%;
+    animation: shimmer 4s ease-in-out infinite;
+}
+
+.blog-wrap::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(108, 117, 125, 0.3) 50%, transparent 100%);
+}
+
+@keyframes shimmer {
+    0%, 100% { background-position: 300% 0; }
+    50% { background-position: -300% 0; }
+}
+
+.blog-wrap:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(52, 58, 64, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: rgba(52, 58, 64, 0.2);
+}
+
+/* 移除图片相关样式 */
+.blog-img {
+    display: none;
+}
+
+/* 内容区域样式 */
+.blog-content {
+    padding: 0;
+    background: transparent;
+    border-radius: 12px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 标题样式 - 大气设计 */
+.blog-content h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 58px;
+    position: relative;
+    background: linear-gradient(135deg, #212529 0%, #495057 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #212529;
+    transition: all 0.4s ease;
+    letter-spacing: -0.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.blog-content h2 a {
+    color: #212529;
+    text-decoration: none;
+    background: linear-gradient(135deg, #212529 0%, #495057 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.blog-content h2 a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #495057, #6c757d);
+    transition: width 0.4s ease;
+}
+
+.blog-content h2 a:hover {
+    background: linear-gradient(135deg, #495057 0%, #6c757d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(-2px);
+}
+
+.blog-content h2 a:hover::after {
+    width: 100%;
+}
+
+/* 元数据样式 - 大气设计 */
+.blog-meta {
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #6c757d;
+    background: linear-gradient(135deg, rgba(248, 249, 250, 0.8) 0%, rgba(233, 236, 239, 0.4) 100%);
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid rgba(233, 236, 239, 0.6);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.blog-meta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(108, 117, 125, 0.2) 50%, transparent 100%);
+}
+
+.blog-meta a {
+    color: #6c757d;
+    margin-right: 24px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.blog-meta a:hover {
+    color: #495057;
+    background: rgba(73, 80, 87, 0.08);
+    transform: translateY(-1px) scale(1.05);
+}
+
+.blog-meta i {
+    margin-right: 6px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 简介样式 - 大气设计 */
+.blog-content p {
+    margin: 0 0 24px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.7;
+    color: #495057;
+    font-size: 15px;
+    position: relative;
+    flex: 1;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* 按钮样式 - 大气设计 */
+.blog-btn {
+    margin-top: auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+.blog-btn a {
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #495057 0%, #6c757d 50%, #495057 100%);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 16px rgba(73, 80, 87, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.blog-btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+    z-index: 1;
+}
+
+.blog-btn a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+    transition: width 0.4s ease;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.blog-btn a:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(73, 80, 87, 0.25), 0 4px 16px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+}
+
+.blog-btn a:hover::before {
+    left: 100%;
+}
+
+.blog-btn a:hover::after {
+    width: 100%;
+}
+
+/* 响应式设计 - 大气优化 */
+@media (max-width: 768px) {
+    .blog-wrap {
+        margin: 20px 0;
+        padding: 24px 20px;
+        min-height: 280px;
+        border-radius: 16px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    
+    .blog-wrap:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 16px 48px rgba(52, 58, 64, 0.12), 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .blog-content h2 {
+        font-size: 18px;
+        min-height: 50px;
+        margin-bottom: 16px;
+        letter-spacing: -0.3px;
+    }
+    
+    .blog-meta {
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+    
+    .blog-meta a {
+        margin-right: 20px;
+        padding: 3px 6px;
+    }
+    
+    .blog-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    .blog-btn {
+        padding-top: 16px;
+    }
+    
+    .blog-btn a {
+        padding: 14px 28px;
+        font-size: 13px;
+        border-radius: 25px;
+        letter-spacing: 0.8px;
+    }
+    
+    .blog-btn a:hover {
+        transform: translateY(-3px) scale(1.01);
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-wrap {
+        margin: 16px 0;
+        padding: 20px 16px;
+        min-height: 260px;
+        border-radius: 14px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+    }
+    
+    .blog-wrap::before {
+        height: 4px;
+    }
+    
+    .blog-wrap:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 40px rgba(52, 58, 64, 0.1), 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+    
+    .blog-content h2 {
+        font-size: 16px;
+        min-height: 44px;
+        margin-bottom: 14px;
+        letter-spacing: -0.2px;
+        font-weight: 600;
+    }
+    
+    .blog-meta {
+        font-size: 12px;
+        margin-bottom: 18px;
+        padding: 10px 14px;
+        border-radius: 8px;
+    }
+    
+    .blog-meta a {
+        margin-right: 16px;
+        padding: 2px 4px;
+    }
+    
+    .blog-content p {
+        font-size: 13px;
+        margin-bottom: 18px;
+        line-height: 1.6;
+        letter-spacing: 0.1px;
+    }
+    
+    .blog-btn {
+        padding-top: 14px;
+    }
+    
+    .blog-btn a {
+        padding: 12px 24px;
+        font-size: 12px;
+        border-radius: 20px;
+        letter-spacing: 0.6px;
+        font-weight: 500;
+    }
+    
+    .blog-btn a:hover {
+        transform: translateY(-2px);
+    }
+}
